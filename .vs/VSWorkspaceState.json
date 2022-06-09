@@ -3,10 +3,7 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
-    "\\src\\environments",
-    "\\src\\styles"
+    "\\src\\app\\components"
   ],
-  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }
