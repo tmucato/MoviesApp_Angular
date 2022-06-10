@@ -3,7 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\components"
+    "\\src\\app\\components",
+    "\\src\\app\\components\\slider",
+    "\\src\\app\\models",
+    "\\src\\app\\pages",
+    "\\src\\app\\shared\\footer",
+    "\\src\\styles"
   ],
+  "SelectedNode": "\\src\\app\\app.module.ts",
   "PreviewInSolutionExplorer": false
 }
