@@ -7,9 +7,8 @@
     "\\src\\app\\components\\slider",
     "\\src\\app\\models",
     "\\src\\app\\pages",
-    "\\src\\app\\shared\\footer",
     "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\app\\app.module.ts",
+  "SelectedNode": "\\src\\app\\components\\slider\\slider.component.ts",
   "PreviewInSolutionExplorer": false
 }
