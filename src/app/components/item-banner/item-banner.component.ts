@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-item-banner',
+  selector: 'item-banner',
   templateUrl: './item-banner.component.html',
   styleUrls: ['./item-banner.component.scss']
 })
