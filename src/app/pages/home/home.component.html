@@ -1,4 +1,6 @@
-<app-slider [items] ='movies'></app-slider>
-<item-banner></item-banner>
-<item-banner></item-banner>
-<item-banner></item-banner>
+<app-slider [items]="upcomingMovies"></app-slider>
+<item-banner [items]="leatestMovies" title ="Leatest Movie"></item-banner>
+<item-banner [items]="popularMovies" title ="Popular Movie"></item-banner>
+<item-banner [items]="topRatedMovies" title ="Top Rated Movie"></item-banner>
+<item-banner [items]="nowPlayingMovies" title ="Now Playing on Theather"></item-banner>
+<item-banner ></item-banner>

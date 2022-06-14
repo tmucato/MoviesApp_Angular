@@ -10,10 +10,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { SliderComponent } from './components/slider/slider.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemBannerComponent } from './components/item-banner/item-banner.component';
-import { MovieItemComponent } from './components/movie-item/movie-item.component'
+import { ItemComponent } from './components/item/item.component'
 
 @NgModule({
-    declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, MoviesComponent, SliderComponent, ItemBannerComponent, MovieItemComponent],
+    declarations: [AppComponent, HeaderComponent, FooterComponent, HomeComponent, MoviesComponent, SliderComponent, ItemBannerComponent, ItemComponent],
     imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, HttpClientModule],
     providers: [],
     bootstrap: [AppComponent]

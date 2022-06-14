@@ -4,11 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
+    "\\src\\app\\components\\item-banner",
+    "\\src\\app\\components\\movie-item",
     "\\src\\app\\components\\slider",
-    "\\src\\app\\models",
-    "\\src\\app\\pages",
-    "\\src\\styles"
+    "\\src\\app\\shared",
+    "\\src\\app\\shared\\footer",
+    "\\src\\app\\shared\\header"
   ],
-  "SelectedNode": "\\src\\app\\components\\slider\\slider.component.ts",
   "PreviewInSolutionExplorer": false
 }
