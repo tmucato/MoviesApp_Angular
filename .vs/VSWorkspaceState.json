@@ -1,16 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src",
-    "\\src\\app",
-    "\\src\\app\\components",
-    "\\src\\app\\components\\item-banner",
-    "\\src\\app\\components\\slider",
-    "\\src\\app\\models",
-    "\\src\\app\\pages",
-    "\\src\\app\\pages\\home",
-    "\\src\\app\\services"
+    "\\src\\app\\pages\\home"
   ],
-  "SelectedNode": "\\src\\app\\components\\item-banner\\item-banner.component.ts",
+  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

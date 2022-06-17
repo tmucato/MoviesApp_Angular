@@ -14,3 +14,10 @@ export interface TvShow {
     vote_average: number;
     vote_count: number;
 }
+
+export interface TvShowsDto {
+    page: number;
+    results: TvShow[];
+    total_results: number;
+    total_pages: number;
+}
