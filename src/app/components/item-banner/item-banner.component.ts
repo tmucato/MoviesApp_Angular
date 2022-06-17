@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Movie } from '../../models/movie';
+import { TvShow } from '../../models/tvshow';
 
 @Component({
   selector: 'item-banner',
@@ -8,7 +9,7 @@ import { Movie } from '../../models/movie';
 })
 export class ItemBannerComponent {
 
-    @Input() items: Movie[] = [];
+    @Input() items: any [] = [];
     @Input() title: string = '';
 
 }
