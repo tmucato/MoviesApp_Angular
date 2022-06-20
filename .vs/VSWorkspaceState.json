@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src\\app\\pages\\home"
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\item",
+    "\\src\\app\\components\\item-banner",
+    "\\src\\app\\components\\slider",
+    "\\src\\app\\pages",
+    "\\src\\app\\pages\\movies",
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src",
   "PreviewInSolutionExplorer": false
 }

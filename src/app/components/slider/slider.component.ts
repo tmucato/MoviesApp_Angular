@@ -17,7 +17,7 @@ import { Movie } from '../../models/movie';
 })
 export class SliderComponent implements OnInit {
 
-    @Input() items: Movie[] = [];
+    @Input() items: any[] = [];
 
 
     currentSlideIndex: number = 0;
