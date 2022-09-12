@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "MoviesApp_Angular"
+  "cli": {
+    "analytics": false
+  }
 }
