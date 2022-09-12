@@ -6,10 +6,11 @@
     "\\src\\app\\components",
     "\\src\\app\\components\\item",
     "\\src\\app\\components\\item-banner",
-    "\\src\\app\\components\\slider",
+    "\\src\\app\\models",
     "\\src\\app\\pages",
-    "\\src\\app\\pages\\movies",
+    "\\src\\app\\pages\\home",
     "\\src\\app\\services"
   ],
+  "SelectedNode": "\\src\\app\\pages\\home\\home.component.ts",
   "PreviewInSolutionExplorer": false
 }
