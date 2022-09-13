@@ -4,13 +4,13 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\components",
-    "\\src\\app\\components\\item",
-    "\\src\\app\\components\\item-banner",
     "\\src\\app\\models",
     "\\src\\app\\pages",
     "\\src\\app\\pages\\home",
+    "\\src\\app\\pages\\movie",
+    "\\src\\app\\pages\\movies",
     "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\pages\\home\\home.component.ts",
+  "SelectedNode": "\\src\\app\\pages\\movie\\movie.component.html",
   "PreviewInSolutionExplorer": false
 }
