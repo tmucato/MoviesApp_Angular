@@ -3,14 +3,12 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\components",
-    "\\src\\app\\models",
-    "\\src\\app\\pages",
     "\\src\\app\\pages\\home",
     "\\src\\app\\pages\\movie",
     "\\src\\app\\pages\\movies",
-    "\\src\\app\\services"
+    "\\src\\app\\services",
+    "\\src\\styles"
   ],
-  "SelectedNode": "\\src\\app\\pages\\movie\\movie.component.html",
+  "SelectedNode": "\\src\\app\\services\\movies.service.ts",
   "PreviewInSolutionExplorer": false
 }
