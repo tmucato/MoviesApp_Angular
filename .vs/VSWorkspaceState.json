@@ -3,12 +3,13 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\pages\\home",
+    "\\src\\app\\components",
+    "\\src\\app\\components\\video-embed",
+    "\\src\\app\\models",
+    "\\src\\app\\pages",
     "\\src\\app\\pages\\movie",
-    "\\src\\app\\pages\\movies",
-    "\\src\\app\\services",
-    "\\src\\styles"
+    "\\src\\app\\services"
   ],
-  "SelectedNode": "\\src\\app\\services\\movies.service.ts",
+  "SelectedNode": "\\src\\app\\components\\video-embed\\video-embed.component.html",
   "PreviewInSolutionExplorer": false
 }
