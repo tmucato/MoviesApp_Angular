@@ -3,12 +3,11 @@
     "",
     "\\src",
     "\\src\\app",
-    "\\src\\app\\components",
-    "\\src\\app\\components\\video-embed",
-    "\\src\\app\\models",
     "\\src\\app\\pages",
     "\\src\\app\\pages\\movie",
-    "\\src\\app\\services"
+    "\\src\\app\\services",
+    "\\src\\styles"
   ],
+  "SelectedNode": "\\src\\app\\pages\\movie\\movie.component.scss",
   "PreviewInSolutionExplorer": false
 }
