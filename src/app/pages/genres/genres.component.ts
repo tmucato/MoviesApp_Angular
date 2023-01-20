@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MoviesService } from 'src/app/services/movies.service';
+import { Genre } from '../../models/genre';
 
 @Component({
   selector: 'app-genres',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GenresComponent implements OnInit {
 
-  constructor() { }
+genres: Genre[] = [];
+
+  constructor(private moviesService : MoviesService) { }
 
   ngOnInit(): void {
+
+    this.moviesService.getMoviesGenres().subscribe(genresData => {this.genres = genresData});
+
   }
 
 }
