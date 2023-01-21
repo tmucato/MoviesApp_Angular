@@ -15,15 +15,21 @@ const routes: Routes = [
     path: 'movies',
     component: MoviesComponent 
   },
+  
+  {
+    path: 'movies/genres/:genreId',
+    component: MoviesComponent 
+  },
+  
+  {
+    path: 'movie/:id',
+    component: MovieComponent
+  },
   {
     path: 'genres',
     component: GenresComponent 
   },
-    {
-        path: 'movie/:id',
-        component: MovieComponent
-    },
-    {
+  {
     path: '**',
     redirectTo: ''
 
