@@ -21,4 +21,24 @@ export class TvShowService {
                 })
             );
     }
+
+    searchTvShows(page: number, searchValue?: string) {
+        const uri = searchValue ? '/search/tv' : '/tv/popular'
+        return this.http.get<TvShowsDto>(this.baseUrl + uri + '?page=' + page + '&api_key=' + this.apiKey + '&query=' + searchValue)
+            .pipe(
+                switchMap(res => {
+                    return of(res.results);
+                })
+            );
+    }
+
+    getTvShowsByGenre(genreId : string, pageNumber: number)
+    {
+        return this.http.get<TvShowsDto>(this.baseUrl + '/discover/tv?api_key=' + this.apiKey + '&with_genres=' + genreId + '&page=' + pageNumber)
+        .pipe(
+            switchMap(res => {
+                return of(res.results);
+            })
+        );       
+    }
 }

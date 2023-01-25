@@ -63,7 +63,7 @@ export class MoviesComponent implements OnInit {
         }
     }
     
-    searchChanged()
+    moviesearchChanged()
     {
         if (this.searchValue) {
             this.getPagedMovies(1, this.searchValue);
