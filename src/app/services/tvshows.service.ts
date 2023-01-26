@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TvShowsDto } from '../models/tvshow';
+import { TvShowsDto, TvShow } from '../models/tvshow';
 import { switchMap } from 'rxjs/operators';
 import { of } from 'rxjs'
 
@@ -13,7 +13,8 @@ export class TvShowService {
 
     constructor(private http: HttpClient) { }
 
-    getTvShows(type: string = 'popular', count: number = 12) {
+    getTvShows(type: string = 'popular', count: number = 12) 
+    {
         return this.http.get<TvShowsDto>(this.baseUrl + '/tv/' + type + '?api_key=' + this.apiKey)
             .pipe(
                 switchMap(res => {
@@ -22,7 +23,12 @@ export class TvShowService {
             );
     }
 
-    searchTvShows(page: number, searchValue?: string) {
+    getTvShow(id: string) {
+        return this.http.get<TvShow>(this.baseUrl + '/tv/' + id + '?api_key=' + this.apiKey)
+    }
+
+    searchTvShows(page: number, searchValue?: string) 
+    {
         const uri = searchValue ? '/search/tv' : '/tv/popular'
         return this.http.get<TvShowsDto>(this.baseUrl + uri + '?page=' + page + '&api_key=' + this.apiKey + '&query=' + searchValue)
             .pipe(

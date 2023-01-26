@@ -1,6 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Movie } from '../../models/movie';
-import { TvShow } from '../../models/tvshow';
 
 @Component({
   selector: 'item-banner',

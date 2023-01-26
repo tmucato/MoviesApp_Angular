@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../../models/movie';
+import { TvShow } from '../../models/tvshow';
 import { IMAGES_SIZES } from '../../constants/images-sizes'
 
 @Component({
@@ -7,7 +8,7 @@ import { IMAGES_SIZES } from '../../constants/images-sizes'
   templateUrl: './item.component.html',
   styleUrls: ['./item.component.scss']
 })
-export class ItemComponent implements OnInit {
+export default class ItemComponent implements OnInit {
 
     @Input() itemData: any | null = null;
 
@@ -18,5 +19,7 @@ export class ItemComponent implements OnInit {
   ngOnInit(): void {
 
   }
+
+  
 
 }
