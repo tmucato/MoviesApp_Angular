@@ -18,7 +18,7 @@ export interface Movie {
     vote_count: number;
     runtime: number;
     status: string;
-    genres: Genre[];
+    genres: Genre[]; 
 }
 
 export interface MovieDto {
@@ -34,7 +34,6 @@ export interface MovieVideoDto
 {
     id: number;
     results: MovieVideo[];
-    
 }
 
 export interface MovieVideo
@@ -43,10 +42,9 @@ export interface MovieVideo
     key: string;
 }
 
-export interface MovieImages{
-    backdrops: {
-        file_path: string;
-    }[]
+export interface MovieImages
+{
+    backdrops:{ file_path: string; }[]
 }
 
 export interface MovieCredits

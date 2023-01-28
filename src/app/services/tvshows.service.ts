@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { TvShowsDto, TvShow } from '../models/tvshow';
+import { TvShowsDto, TvShow, TvShowVideoDto, TvShowImages, TvShowCredits } from '../models/tvshow';
 import { switchMap } from 'rxjs/operators';
 import { of } from 'rxjs'
 
@@ -27,6 +27,27 @@ export class TvShowService {
         return this.http.get<TvShow>(this.baseUrl + '/tv/' + id + '?api_key=' + this.apiKey)
     }
 
+
+    getTvShowVideos(id: string)
+    {
+        return this.http.get<TvShowVideoDto>(this.baseUrl + '/tv/' + id + '/videos?api_key=' + this.apiKey)
+        .pipe(
+            switchMap(res => {
+                return of(res.results);
+            })
+        );
+    }
+
+    getTvShowImages(id: string)
+    {
+        return this.http.get<TvShowImages>(this.baseUrl + '/tv/' + id + '/images?api_key=' + this.apiKey)
+    }
+
+    getTvShowCredits(id: string)
+    {
+        return this.http.get<TvShowCredits>(this.baseUrl + '/tv/' + id + '/credits?api_key=' + this.apiKey)
+    }
+
     searchTvShows(page: number, searchValue?: string) 
     {
         const uri = searchValue ? '/search/tv' : '/tv/popular'
@@ -47,4 +68,8 @@ export class TvShowService {
             })
         );       
     }
+
+
+
+
 }
