@@ -2,7 +2,6 @@
     <app-slider [items]="[tvshow]" [isBanner]="true"></app-slider>
     <p-tabView>
         <p-tabPanel header="Overview">
-
             <div class="grid">
                 <div class="col-12 md:col-3 lg:col-3">
                     <img class="poster" [src]="imagesSizes.medium + tvshow.poster_path" [alt]="tvshow.name" />
@@ -31,7 +30,7 @@
                     <div class="stat">
                         <div class="label"> Number of Seasons</div>
                         <div class="value">
-                            {{tvshow.number_of_seasons }} min
+                            {{tvshow.number_of_seasons }} 
                         </div>
                     </div>
                     <div class="stat">
@@ -88,5 +87,4 @@
             </div>
         </ng-template>
     </p-carousel>
-
 </ng-container>
