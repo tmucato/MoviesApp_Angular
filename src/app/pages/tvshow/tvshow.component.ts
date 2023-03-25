@@ -24,35 +24,35 @@ export class TvshowComponent implements OnInit {
   ngOnInit(): void {
 
     this.route.params.pipe(first()).subscribe(({ id }) => {
-      this.getMovie(id);
-      this.getMovieVideos(id);
-      this.getMovieImages(id);
-      this.getMovieCredits(id);
+      this.getTvShow(id);
+      this.getTvShowVideos(id);
+      this.getTvShowImages(id);
+      this.getTvShowCredits(id);
     });
   }
 
 
-  getMovie(id: string)
+  getTvShow(id: string)
   {
     this.tvshowService.getTvShow(id).subscribe((tvshowData) => {
       this.tvshow = tvshowData;
   });
   }
 
-  getMovieVideos(id: string)
+  getTvShowVideos(id: string)
   {
     this.tvshowService.getTvShowVideos(id).subscribe((tvshowVideoData) => {
       this.tvshowVideos = tvshowVideoData
   });
   }
 
-  getMovieImages(id: string)
+  getTvShowImages(id: string)
   {
     this.tvshowService.getTvShowImages(id).subscribe((tvshowImagesData) => {
       this.tvshowImages = tvshowImagesData
   });
   }
-  getMovieCredits(id: string)
+  getTvShowCredits(id: string)
   {
     this.tvshowService.getTvShowCredits(id).subscribe((tvshowCreditsData) => {
       this.tvshowCredits = tvshowCreditsData

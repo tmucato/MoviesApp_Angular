@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TvShowsDto, TvShow, TvShowVideoDto, TvShowImages, TvShowCredits } from '../models/tvshow';
+import { GenresDto } from '../models/genre';
 import { switchMap } from 'rxjs/operators';
 import { of } from 'rxjs'
 
@@ -69,6 +70,14 @@ export class TvShowService {
         );       
     }
 
+    getTvShowGenres() {
+        return this.http.get<GenresDto>(this.baseUrl + '/genre/tv/list?api_key=' + this.apiKey)
+            .pipe(
+                switchMap(res => {
+                    return of(res.genres);
+                })
+            );
+    }
 
 
 

@@ -3,7 +3,7 @@ import { MoviesService } from '../../services/movies.service';
 import { Movie } from '../../models/movie'
 import { ActivatedRoute } from '@angular/router';
 import { take } from 'rxjs';
-import { NonNullableFormBuilder } from '@angular/forms';
+
 
 @Component({
     selector: 'app-movies',

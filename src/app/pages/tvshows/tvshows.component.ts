@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { TvShow } from '../../models/tvshow';
 import { TvShowService } from '../../services/tvshows.service';
+import { ActivatedRoute } from '@angular/router';
+import { take } from 'rxjs';
+
 
 @Component({
   selector: 'app-tvshows',
@@ -18,7 +20,17 @@ export class TvshowsComponent implements OnInit {
   constructor(private tvshowsService: TvShowService , private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.getPagedTvShows(1);
+    this.route.params.pipe(take(1)).subscribe(({genreId}) =>{
+      if (genreId) 
+      {
+          this.genreId = genreId;
+          this.getTvShowsByGenre(genreId, 1);
+      }
+      else
+      {
+      this.getPagedTvShows(1);
+      }
+    })
   }
 
 
